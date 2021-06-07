@@ -1,0 +1,53 @@
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>gg</title>
+</head> 
+<body>
+	<form name="表單" method="post" action="bcc.php">
+	<input type="radio" name="method" value="branch" required>查詢分行<BR>
+	<input type="radio" name="method" value="client" checked>查詢客戶<BR>
+	<input type="radio" name="method" value="plan">查詢貸款計劃<BR>
+	請輸入其編號： 
+	<input type="text" name="value"><BR>
+	<input type="submit" value="送出"><BR>
+	</form>
+	
+	<form  method="post"  action="dob.php">
+	對分行進行<BR>
+	<input type="radio" name="method" value="insert" required>新增<BR>
+	<input type="radio" name="method" value="update" checked>更新(根據編號修改)<BR>
+	<input type="radio" name="method" value="delete">刪除(只要編號即可)<BR>
+	分行名稱:<input type="text" name="bname"><BR>
+	分行編號:<input type="text" name="bid"><BR>
+	經理名稱:<input type="text" name="mname"><BR>
+	經理任日:<input type="text" name="mdate">ex 2019-04-14<BR>
+	分行地址:<input type="text" name="addr"><BR>
+	<input type="submit" value="送出" ><BR>
+	</form>
+	<form method="post" action="doc.php">
+	對客戶進行<BR>
+	<input type="radio" name="method" value="insert" required>新增<BR>
+	<input type="radio" name="method" value="update" checked>更新(根據編號修改)<BR>
+	<input type="radio" name="method" value="delete">刪除(只要編號即可)<BR>
+	客戶名稱:<input type="text" name="cname"><BR>
+	客戶編號:<input type="text" name="cid"><BR>
+	保人名稱:<input type="text" name="rname"><BR>
+	客戶電話:<input type="text" name="cphone"><BR>
+	<input type="submit" value="送出"><BR>
+	</form>
+	<form method="post" >
+	對貸款計劃進行<BR>
+	<input type="radio" name="method" value="insert" required>新增<BR>
+	<input type="radio" name="method" value="update" checked>更新(根據編號修改)<BR>
+	<input type="radio" name="method" value="delete">刪除(只要編號即可)<BR>
+	計劃名稱:<input type="text" name="pname"><BR>
+	計劃編號:<input type="text" name="pid"><BR>
+	所屬分行:<input type="text" name="bid"><BR>
+	貸款金額:<input type="text" name="loan"><BR>
+	年付金額:<input type="text" name="payyear"><BR>
+	聯絡電話:<input type="text" name="pphone"><BR>
+	<input type="submit" value="送出"><BR>
+	</form>
+</body>
+</html> 
